@@ -72,7 +72,6 @@ I'm particularly interested in applications of natural language processing in le
 <!-- Editors of the third edition of the OED, to be completed by 2037, estimate that the rate of inclusion of new words into the OED are about 4,000 per year.
 -->
 
-- The majority of new words in fact fail to become established in language. (Algeo,1993)
 
 - Without the lack of adequate empirical tools, even the *word-watching website* can only observe from the sidelines.
 
@@ -82,6 +81,7 @@ I'm particularly interested in applications of natural language processing in le
 
 > (Algeo,1993) points out that even those words that do make it into dictionaries often fall out of usage. 58% of the new words collected in the *Britannica Book of the Year* between 1944 and 1976 were not rewarded with a dictionary entry (quoted from (Cook, 2010))  
 
+<!-- The majority of new words in fact fail to become established in language. (Algeo,1993) -->
 
 
 *** =left
@@ -107,7 +107,7 @@ I'm particularly interested in applications of natural language processing in le
 
 *** =left 
 
-> All dictionaries will turn out to be diachronic/historical/etymological ones? (if no one retired)
+> All dictionaries will turn out to be diachronic/historical ones? (if no one retired)
 
 
 *** =right
@@ -124,7 +124,7 @@ I'm particularly interested in applications of natural language processing in le
 
 
 ---
-## Since when has Google become a Dictionary
+## Since when has Google become a Dictionary!?
 
 > Millennial. hipster. yuppie. muppie. Henry, and now, yuccie.
 
@@ -137,8 +137,10 @@ I'm particularly interested in applications of natural language processing in le
 ### Lexicalization and Language Change
 
 - Language in use is a dynamically developing system adapting to its ever-changing social environment.
-- Language change: phenomenon or epiphenomenon (of a static capacity, Lehmann 1993:320)?
-- Lexicalization: the process by which new items that are considered 'lexical' come into being (Brinton and Traugot, 2005)
+
+- 'The diachronic, gradual and individual process by means of which novel lexemes and lexical units become a permanent addition to the lexicon of speakers and the language community is labeled **establishment** (Schmid, 2011).
+
+- The process of establishment has been studied in terms of *lexicalization* (the process by which new items that are considered 'lexical' come into being) (Brinton and Traugot, 2005) and *institutionalization* (from socio-pragmatic perspective) (Lipka, 1977).
   - __adoption into the lexicon__
   - __falling outside the productive rules of grammar__
 
@@ -208,7 +210,7 @@ In some cases words might be *dead* to all purposes, but could revived by the me
   
 **Missing**
   
-<a class="btn btn-large btn-danger" rel="popover" data-content="How does words survive? what is the life cycle? When to be recorded in Dictionary?" data-original-title="4th Question" id='example'>The survival problem</a>
+<a class="btn btn-large btn-danger" rel="popover" data-content="How does words survive? what is the life cycle? When to be recorded in Dictionary?" data-original-title="" id='example'>The survival problem</a>
 
 
 
@@ -233,12 +235,12 @@ In some cases words might be *dead* to all purposes, but could revived by the me
 
 
 ---
-## Previous Approaches
+## Previous Works
 
-- Linguistic
-- Psycholinguistic
-- Applied lexicological
-- Computational linguistic
+- Linguistic Approach
+- Psycholinguistic Approach
+- Applied lexicological Approach
+- Computational linguistic Approach
 
 
 --- bg:#F0FFF0
@@ -277,7 +279,7 @@ Note: various morphological mechnisms for lexical neology (Cook, 2010):
 
 ## Examples of Popular Culture Neologisms
 
-[Staycation] : morphological strategy?
+[Staycation] : type of neologism? morphological strategy?
 
 1. _lexical neology_
 2. semantic neology
@@ -299,18 +301,18 @@ Lexical Blends
 > How do neologisms leave the memory trace in our mental lexicon? (frequencies of exposure, types of neologisms, ...)
 
 
-- (De Vaan, Schreuder, and Baayen, 2007) For the neologisms, a stepwise mixed-effect regression analysis resulted in a model with significant main effects of Length, and Number of Synsets. As for the existing words, ratings increased with increasing Length ($\hat{\beta}$ = 0.238, t(877) = 2.805, p = .0051) and decreased for increasing Numbers of Synsets ($\hat{\beta}$ = −0.560, t(877) = −3.359, p = .0008). 
+- (De Vaan, Schreuder, and Baayen, 2007) For the neologisms, a stepwise mixed-effect regression analysis resulted in a model with significant main effects of **Length**, and **Number of Synsets**. As for the existing words, ratings increased with increasing Length ($\hat{\beta}$ = 0.238, t(877) = 2.805, p = .0051) and decreased for increasing Numbers of Synsets ($\hat{\beta}$ = −0.560, t(877) = −3.359, p = .0008). 
 
-> What we are concern about is the collective mental lexicon (constrained by real world / socail communication)
+> What we are concern about is the collective mental lexicon (constrained by real world / social communication)
 
 
 ---
 ## Leixogrpahy in Practice
 > How do you decide whether a new word should be included in an Oxford dictionary?
 
-- paradox: in order to find usages of a previously undocumented word suspected of being new, one would have to wait until it was encountered during reading (Barnhart, 1985).
+- Previously it was a paradox: in order to find usages of a previously undocumented word suspected of being new, one would have to wait until it was encountered during reading (Barnhart, 1985).
 
-- corpus-based/aided method changed lexicographer's works. (Atkins and Rundell, 2008)
+- Corpus-based/aided method changed lexicographer's works. (Atkins and Rundell, 2008)
 
 <!--The Collins COBUILD English Language Dictionary broke new ground in lexicography by being the first dictionary to be based entirely on corpus evidence (Sinclair, 1987).
 -->
@@ -356,9 +358,9 @@ $$
 <!-- newly-coined words vs established words found in a dictionary-->
 
 - (Renouf 2013) based on 1.2 billion words corpus from UK newspaper (1989-2011) proposed the Life cycle of a word as *birth, settling down, obsolescence, death, and re-birth*.
-- (Kerremans, 2014): four stages of conventionalization.
+- (Kerremans, 2014) proposes four stages of conventionalization: *creation, consolidation, establishment*.
 
-
+> Our terminology: difussion and stablization
 
 
 ---
@@ -375,7 +377,7 @@ $$
 
 ---
 ## Corpus-based Applied Lexicology 
-#### Quantitative Laws
+### Quantitative Laws
 
 
 - Quantitative studies have brought to significant progress in the understanding of word's *life-stage statistics* (originated, evolved, die out) and *language evolution*.
@@ -418,7 +420,7 @@ Use **collocational information** to (semi-) automatically determine the candida
 4. Conclusion
 
 
----
+---bg:#F0FFF0
 ## Our Concern
 
 - Do we have the chance to develop a stabalization measure of neologisms that indicate whether they are likely to remain in usage, (and therefore should be included in a dictionary)?
@@ -445,7 +447,7 @@ Use **collocational information** to (semi-) automatically determine the candida
 - Google Book ngram corpus (training data to gain insight)
 - UDN (The United Daily News): provides newswires over several years in Taiwan.
 - Word list from MOE (1997) 
-- PTT corpus : neologism sensor?
+- PTT corpus as neologism sensor: the most popular discussion forum in Taiwan (over than 20,000 boards and 1.5 million users, more than 10,000 articles are posted/day.)
 - DeepLex
 
 
@@ -503,7 +505,7 @@ Use **collocational information** to (semi-) automatically determine the candida
 
 ---
     
-## The Deep LEXICON Project: Variables
+## The Deep Lexicon Project: Variables
 
 | **Module.Variable**        | **Description**                       |
 |---------------------|---------------------------------------|
@@ -538,7 +540,8 @@ Use **collocational information** to (semi-) automatically determine the candida
 ## Time-series Modeling: a pilot study for short-term frequency
 ### Our First Approach (Liu, Hsieh, and Prévot, 2013)
 
-- PTT Corpus [`http://lopen.linguistics.ntu.edu.tw/PTT`]-based (2005-2012, three hot discussion boards), preproceesed. PTT 
+- PTT Corpus [`http://lopen.linguistics.ntu.edu.tw/PTT`]-based (2005-2012, three hot discussion boards), preproceesed. 
+- 25 rators with $\kappa$ =0.45 ('moderate agreement').
 
 <img src="assets/img/flowchart_ptt.png" alt="Drawing" style="width: 800px;"/>
 
@@ -619,8 +622,8 @@ __________
 ---
 ## Exploratory Regression Modeling of the Life Stage of Diffusion and Stabilization
 
-- `Constant U` as dependent variable for 384 lexical items with 19 predictor variables under 6 dimensions (semantics, syntax, morphology, pragmatics-ontology, phonology, sociolinguistics).
-- Multiple linear regression model with backward variable selection and AIC criterion. (82% variations explained with $R^{2}$=0.80).
+- `Constant U` (Wang, 2010; 2015) as dependent variable for 384 lexical items with 19 predictor variables under 6 dimensions (semantics, syntax, morphology, pragmatics-ontology, phonology, sociolinguistics).
+- Multiple linear regression and logistic model with backward variable selection and AIC criterion were used (82% variations explained with $R^{2}$=0.80)
 
 ---
 ## Residual Analysis 
@@ -667,8 +670,8 @@ Other General **Findings**:
 ## Distributed Social Network of Neologisms
 ### Summarized in SNA's parlance 
 
-- Make friends, as many/varied as you can (廣結善緣)
-- Compete with established ones if you can (在競爭又合作的環境下找自己的利基點)
+- Make friends, as many/varied as you can 
+- Compete with established ones if you can 
 
 Resulting in the
 
@@ -693,7 +696,7 @@ $$latex
 $$
 
 - F: `frequency diversity within short-term time span` (revised constant U)
-  - cross-boards frequency $\frac{mean}{SD}$ * cross-month frequency $\frac{mean}{SD}$ from various sources (ptt and newspapers)
+  - cross-boards frequency $\frac{mean}{SD}$ * cross-month frequency $\frac{mean}{SD}$ (from various sources,i.e.ptt and newspapers)
 
 - S: `syntagtic lexical network` via *collocation variations* ($\frac{type}{token}$)
 - P: `paradigmatic lexical network` via *distributional proximity*
