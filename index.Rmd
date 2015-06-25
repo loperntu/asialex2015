@@ -356,48 +356,42 @@ $$
 - G: the number of genres in which *w* occurs
 - T: the time span over which *w* has been observed.
 
-
-
-
 ---
 ## Corpus-based Applied Lexicology 
-
-- **Frequency effect** takes the lead and entrenchment drives the effect?
-- Quantitative formulation (..) delineate proposed life stages and "predict whether a word may be survived after being coined".
-
----
-## Corpus-based Applied Lexicology | Stages
+### Stages
 
 <!-- newly-coined words vs established words found in a dictionary-->
 
-- `r citep(bib[['kerremans2014web']])`  : four stages of conventionalization.
+- (Renouf 2013) based on 1.2 billion words corpus from UK newspaper (1989-2011) proposed the Life cycle of a word as *birth, settling down, obsolescence, death, and re-birth*.
+- `r citep(bib[['kerremans2014web']])`: four stages of conventionalization.
 
-- Life cycle of a word: *birth, settling down, obsolescence, death, and re-birth* (Renouf 2013)
+
 
 
 ---
 ## Corpus-based Applied Lexicology 
+### Frequency effects
+
+- **Word Frequency** takes the lead in explaning the success story of words, life stages and the prediction force of whether a word may be survived after being coined.
 
 - Word frequency variations take place both due to external and internal factors. 
-  - Product-words (P-words) : driven exogenously by events that are external to the group
+  - Product-words (P-words) : driven exogenously by events that are external to the group, such as product releases.
   - Slang-words (S-words): more endogenously influenced by the social values and language patterns of the communication group.
 
-
-- indexicality: being used by different individuals
-- topicality: being used in different topics.
-
+- The frequency of a word in short-time scale should be determined by the amount of *being used by different individuals* (**indexicality**) and *the range of being used in different topics* (**topicality**).
 
 ---
-## Quantitative Lexicology 
+## Corpus-based Applied Lexicology 
+#### Quantitative Laws
 
 
 - Quantitative studies have brought to significant progress in the understanding of word's *life-stage statistics* (originated, evolved, die out) and *language evolution*.
+
 - Different statistical model of word usage frequency dynamics have been proposed.
   - e.g., `r citep(bib[['altmann2013identifying']])` reveals strong relation between changes in word *dissemination* and changes in *frequency*; `r citep(bib[['petersen2012statistical']])` ... 
   
 
-
-> since neologisms are expected to be rather infrequent due to the recency of their coinage, methods for lexical acquisition that rely solely on statistical distributional information are not well-suited for learning syntactic or semantic properties of neologisms, particularly those which have very low frequency. `r citep(bib[['cook2010exploiting']])`
+> Since neologisms are expected to be rather infrequent due to the recency of their coinage, methods for lexical establishment that rely solely on statistical distributional information are not well-suited for learning the linguistic properties of neologisms, particularly those which have very low frequency. `r citep(bib[['cook2010exploiting']])`
 
 
 
@@ -434,9 +428,9 @@ Use **collocational information** to (semi-) automatically determine the candida
 ---
 ## Our Concern
 
-- Do we have the chance to develop a stabalization measure of neologisms that indicate whether they are likely to remain in usage, (and therefore should be included in a dictionary). 
+- Do we have the chance to develop a stabalization measure of neologisms that indicate whether they are likely to remain in usage, (and therefore should be included in a dictionary)?
 
-- What's the role of linguistic knowledge in this exploratory process
+- What's the role of linguistic knowledge in this exploratory process?
 
 
 ---
@@ -548,12 +542,10 @@ Use **collocational information** to (semi-) automatically determine the candida
 
 
 ---
-## Time-series: a pilot study for short-term frequency
+## Time-series Modeling: a pilot study for short-term frequency
+### Our First Approach `r citep(bib[['liu2013observing']])`
 
-`r citep(bib[['liu2013observing']])`
-
-- PTT-based (2015-2012, three hot discussion boards), preproceesed.
-- PTT Corpus (`http://lopen.linguistics.ntu.edu.tw/PTT`)
+- PTT Corpus [`http://lopen.linguistics.ntu.edu.tw/PTT`]-based (2005-2012, three hot discussion boards), preproceesed. PTT 
 
 <img src="assets/img/flowchart_ptt.png" alt="Drawing" style="width: 800px;"/>
 
@@ -579,77 +571,92 @@ Use **collocational information** to (semi-) automatically determine the candida
 
 How many years to be observed ?
 
-- (Chang 2008; Wang 2010) proposed to use normalized frequency within a year or so to judge whether a once diffused new word is conventionalized is using or is failed to be captured. (Xu,1999) proposed that 10 years should be the criteria.
+- (Chang 2008; Wang 2010) proposed to use normalized frequency within a year or so to judge whether a once diffused new word is conventionalized is using or is failed to be captured; (Xu,1999) proposed that 10 years should be the criteria.
 
-- Since the Surface Frequency measure is 'zero' for all neologisms, hard to be a good indicator for stablization index.
+- Since the Surface Frequency measure is quite low for all neologisms, hard to be a good indicator for stablization index.
 
-- 也容易受特定事件影響。Some words may sporadically come into fashion in certain external events.
-e.g., 挺 may come and go follow the start and end of election. 花博。本研究把與特定事件 bind 在一起的叫做 fashion word, 不處理。
+__________
 
-
-
-
----
-## Modeling the Life Cycle of Words: Our Second Approach
-
-1. Use `google book ngram` as training data (to infer the laws), and `ptt` as test data.
-
-2. In addition to previous efforts that exploit the syntagmatic patterns of a candidate neologism (e.g., via `collocate profile`), we also propose to incorporate paradigmatic patterns (via creating `social network` of the candidate).
-
-4. Power the predition model with weights from human jugements (via questionnaire web application or APP games)
+**Findings**: the frequency of a word in short-time scale should be observed through the frequency variations: amount of *being used by different individuals* (user IDs), frequencies per month;  *the range of being used in different topics* (boards), etc.
 
 
 
----
+--- .centrepre &vcenter
+
 ## DeepLEX is in
 
 <!--詞彙不像人，可以離群索居，成就自己的意義。詞彙的意義是透過系統間的關係相對定義出來的。
 因此我們認為應該關注詞彙的社會行為。-->
 
-BTU Question: 那些變項|組合最大地決定了`詞彙年齡` (存活能力) ? 
+<a class='example'>Question</a>
+
+          #################
+    Which linguitic factors / combinations maximally explain the lexical establishment? 
+          #################
+
   
 
 ---
-## Our Approach | Targets and Hypothesis
+## Our 2nd Approach | Targets 
 
 <!-- BORN :The time span over which a word has been used —the date between the first citation-->
 
-* Focus only on: 
-  * words that are `newly diffused` (for about 1 years).
-  * words that were considered `new words` (50 years ago).
-  * words that are assumed to be `conventionalized` (existed over around 50 years).
+1. Use `google book ngram` as training data (to infer the 'laws'), and `ptt` corpus as test data.
+2. Use `DeepLex` as guidebook.
+3. Focus only on three classes of words: 
+  * words that are `newly diffused` (for about just 1 years).
+  * words that were considered `new words` (coined around 20 years ago).
+  * words that are assumed to be `conventionalized` (since before 1950).
   
   ```
   Proper nouns are ruled out, for they are mostly propelled into the media glare due to 
-  a real-world event ot popular preoccupation.
+  a certain external event or popular preoccupation. 
   ```
+<!-- fashion word, 不處理。-->
+
+---
+## Our 2nd Approach | Hypothesis
 
 <!-- words that are `inactivated`.-->
 
-* Hypothesis
-  - 跟競爭/適者生存有關係 e.g. ic vs ical
-  - Linguistic knowledge can be exploited to infer the survival chance.
+
+  - Language as ecosystem: words **cooperating as well as competing** for the attention of the language users, which could be best explained in terms of their *social behaviors across time*.
+  - Linguistic knowledge can be exploited to infer their survival chance in the system.
+
+---
+## Exploratory Regression Modeling of the Life Stage of Diffusion and Stabilization
+
+- `Constant U` as dependent variable for 384 lexical items with 19 predictor variables under 6 dimensions (semantics, syntax, morphology, pragmatics-ontology, phonology, sociolinguistics).
+- Multiple linear regression model with backward variable selection and AIC criterion. (82% variations explained with $R^{2}$=0.80).
+
+---
+## Residual Analysis 
+
+
+
 
 
 ---
-## Goal 
-### Discovering Influential Factors 
+## Results | Discovering Influential Factors 
 
 What are the driven (linguistic) factors for a lexical item to enter the *collective mental lexicon*?
 
-* (Short-term) usage frequency pattern
-* Lexical social network
+- **semantic and pragmatic** dimensions significantly explain words of 3rd type (before 1950) `stabilization`
+- **syntactic ('co-text')** dimensions significantly explain words of 2rd type (coined around 1997) `diffusion`
+
+
+
+
+___________
+Other General **Findings**:
+
+* Words in competition with established words (but not many!) are more likely to succeed. ($\rightarrow$ in competition case the denotatum is well established, so only the new form need to run for supporting from speakers, while in non-competition case both need to be accepted). Echoed with (Boulanger, 2002), quoted from Cook (2010)).
+* Importance of the their social network
 
 
 ---
-## Regression Modeling of the Life Stage of Diffusion and Stabilization
-
-- ex
-
-
----
-## Finding the Linguistic Niche 
-### Lexical Social Network
+## Toward Finding the Linguistic Niche 
+### in the Lexical Social Network
 
 - (Altmann et al., 2011) proposed the concept of *niche*, defined as the relationship between the word and the characteristic features of the environments in which it is used.
     - Two important aspects of the size of the word niche to be quantified: **the range of individuals using the word** and **the range of topics it is used to discuss**.
@@ -659,55 +666,44 @@ What are the driven (linguistic) factors for a lexical item to enter the *collec
 
 - (Baayen,2008) developed measure of `the age of a verb` on the basis of an etymological disctionary, and found that **neighborhood density if the stem** is a predictor for the age of a verb.
 
-- "New words which are in competition with an already established word (i.e., the new word and established word are roughly synonymous) are more likely to succeed than new words which are not in competition with an established form". `r citep(bib[['boulanger2002makes']])`, quoted from `r citet(bib[['cook2010exploiting']])`).
-
 <!-- You can imagine that In the no-competition case, both the new word and new referent must be accepted.-->
 
 
 
 ---
-## Finding the Linguistic Niche
-### Lexical Social Network
-
-
-<!--
-```{r, fig.width=8, fig.height=5, echo=FALSE}
-library(languageR)
-colnames(etymology)
-```
--->
-
-
----
 ## Distributed Social Network of Neologisms
-### SNA's parlance 
+### Summarized in SNA's parlance 
 
-- 交各式各樣的朋友 (Make friends, as many/varied as you can)
-- 在競爭環境下找自己的利基點 (Compete with established ones if you can) 
+- Make friends, as many/varied as you can (廣結善緣)
+- Compete with established ones if you can (在競爭又合作的環境下找自己的利基點)
+
+Resulting in the
 
 1. Frequency Diversity (e.g., the dissemination of words across individuals/generations/topics/boards/...)
-2. Strength of Ties
-3. Niche (when different forms compete to express the same meaning)
+
+2. Strength of Social Ties
+
+3. irreplaceable Niche (when different forms compete to express the same meaning)
 
 ```
-Distributional (Semantic) Model based on the Deep LEXICON
+The Secret of Long-Living Words
 ```
 
 
 
 ---
-## Magic Formular identified 
+## Magic Formular identified :-)
 
-Measure of Inclusion: (Hseih et al. forthcoming)
+**Measure of Inclusion**: (Hseih et al. forthcoming)
 $$latex
 \mathcal{I} = \ln( \alpha \mathcal{F} + \beta \frac{S}{P}) 
 $$
 
-- F: frequency diversity within short-term time span (revised constant U)
-  - number of sources (ptt and newspapers)
-  - number of genres (different boards)
-- S: syntagtic lexical network via *collocation variations* (type/token)
-- P: paradigmatic lexical network via *distributional proximity*
+- F: `frequency diversity within short-term time span` (revised constant U)
+  - cross-boards frequency $\frac{mean}{SD}$ * cross-month frequency $\frac{mean}{SD}$ from various sources (ptt and newspapers)
+
+- S: `syntagtic lexical network` via *collocation variations* ($\frac{type}{token}$)
+- P: `paradigmatic lexical network` via *distributional proximity*
 
 <!--
 1. some of these properties may play a larger role in determining a word’s importance for inclusion in a dictionary than others. A supervised machine learning algorithm could be used to learn an optimal weighting for the various properties. 
@@ -728,20 +724,37 @@ plot(fit)
 
 
 
-
-
-
-
-
 ---
-# Dictionary as A Mashup (from a non-lexicographer's need)
+## More on *distributional proximity*
 
-- Design instead of Compile: linguistic annotation craft
-- Mobile, customized, ... can't resist 
+- In addition to previous efforts that exploit the syntagmatic patterns of a candidate neologism (e.g., via `collocate profile`), we also propose to incorporate paradigmatic patterns (via creating `social network` of the candidate).
+- Distributional model to the proximity revised from Sketch Engine's Thesaurus algorithm. (using `dependency relations` instead).
+
+
+<img src="assets/img/sketch.png" alt="Drawing" style="width: 900px;"/>
+
+
+
+
+
+
+
+
+--- .nobackground .quote
+
+<q> Dictionary as A Mashup : Am I asking too much of lexicographers? </q>
+
+- 'Design' instead of 'Compile': equipped with linguistic annotation craft
+- Mobile, customized, ... the trend no need to resist 
+
+<!-- Variative in the normative -->
 
 ```
-user experience, etymology, establishment estimate, 
+user experience, etymology, stablization score/lexical age, picture, pronunciations,....
+a matter of creativity!   
 ```
+
+Chinese WordMap [http://lopen.linguistics.ntu.edu.tw/cwm]
 
 ---
 ## Dynamaic Neocrawler, Sketch and Estimation
@@ -768,9 +781,10 @@ NeoCilin: <http://lopen.linguistics.ntu.edu.tw:12345/>
 
 
 ---
-## 問題：
+## Issues Remained:
 
-- variant forms and spellings: (text normalization: to convert all instances of a word in its various forms to a single canonical form? (e.g., google-googled;) 頗喝
+- Variant forms and spellings: (text normalization: to convert all instances of a word in its various forms to a single canonical form? (e.g., google-googled; 頗喝-頗ㄏ)
+- Computational cost is VERY HIGH.
 
 
 
