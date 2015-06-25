@@ -19,7 +19,7 @@ github      : {user: loperntu, repo: asialex2015}
 
 
 ---
-## Motivation: Age Guessing (X)
+## Motivation (X): Age Guessing 
 
 
 
@@ -35,7 +35,7 @@ I'm particularly interested in applications of natural language processing in le
 -->
 
 ---
-## Motivation: Lexical Age Guessing (X)
+## Motivation (O): Lexical Age Guessing
 
 
 <img src="assets/img/neo.png" alt="Drawing" style="width: 700px;"/>
@@ -230,7 +230,7 @@ In some cases words might be *dead* to all purposes, but could revived by the me
 
 1. Introduction
 2. __`Previous works on Neologisms`__
-3. Measuring Lexical Aging as an Example
+3. Our approach
 4. Conclusion
 
 
@@ -439,7 +439,7 @@ Use **collocational information** to (semi-) automatically determine the candida
 ---
 ## Our Approach | Going deep with big data
 
-- Tsunami of linguistic data; influx of neologisms
+- Tsunami of linguistic data; massive influx of neologisms is unavoidable
 
 <!-- However, because of a lack of precise knowledge of the value embedded within this huge crush of data, many businesses have been stuck in the “data for data’s sake” trap .... Deep data? another industry buzzword?--> 
 
@@ -549,7 +549,7 @@ Use **collocational information** to (semi-) automatically determine the candida
 
 (Liu, Hsieh, and Prévot, 2013)
 
-- PTT-based (2015-2012, 八卦版+就可版+笨版), preproceesed.
+- PTT-based (2015-2012, three hot discussion boards), preproceesed.
 - PTT Corpus (`http://lopen.linguistics.ntu.edu.tw/PTT`)
 
 <img src="assets/img/flowchart_ptt.png" alt="Drawing" style="width: 800px;"/>
@@ -566,7 +566,7 @@ Use **collocational information** to (semi-) automatically determine the candida
 ---
 ## Results and Discussion
 
-- These large, short-term fluctuations add an important new dimension to the study of the long-term dynamics of language, as any novel expression must survive in the short term to survive in the long term. (Altmann, 2011). But short-term frequency data do not reveal the difference between diffusion and stablization.
+- These large, short-term fluctuations add an important new dimension to the study of the long-term dynamics of language, as any novel expression must survive in the short term to survive in the long term. (Altmann, 2011). `But short-term frequency data do not reveal the difference between diffusion and stablization`.
 
 <img src="assets/img/ptt.freq.png" alt="Drawing" style="width: 900px;"/>
 
@@ -584,6 +584,19 @@ How many years to be observed ?
 e.g., 挺 may come and go follow the start and end of election. 花博。本研究把與特定事件 bind 在一起的叫做 fashion word, 不處理。
 
 
+
+
+---
+## Modeling the Life Cycle of Words: Our Second Approach
+
+1. Use `google book ngram` as training data (to infer the laws), and `ptt` as test data.
+
+2. In addition to previous efforts that exploit the syntagmatic patterns of a candidate neologism (e.g., via `collocate profile`), we also propose to incorporate paradigmatic patterns (via creating `social network` of the candidate).
+
+4. Power the predition model with weights from human jugements (via questionnaire web application or APP games)
+
+
+
 ---
 ## DeepLEX is in
 
@@ -592,18 +605,6 @@ e.g., 挺 may come and go follow the start and end of election. 花博。本研�
 
 BTU Question: 那些變項|組合最大地決定了`詞彙年齡` (存活能力) ? 
   
-
----
-## Modeling Lexical Aging: Our Second Comings 
-
-不是二元的分類問題，應有新的訓練與評測方法
-
-1. Use `google book ngram` as training data (to infer the laws), and `ptt` as test data.
-
-2. In addition to previous efforts that exploit the syntagmatic patterns of a candidate neologism (e.g., via `collocate profile`), we also propose to incorporate paradigmatic patterns (via creating `social network` of the candidate).
-
-4. Power the predition model with weights from human jugements (via questionnaire web application or APP games)
-
 
 ---
 ## Our Approach | Targets and Hypothesis
@@ -682,7 +683,7 @@ What are the driven (linguistic) factors for a lexical item to enter the *collec
 ## Distributed Social Network of Neologisms
 ### SNA's parlance 
 
-- 交各式各樣的朋友 (Make friends, as many/varies as you can)
+- 交各式各樣的朋友 (Make friends, as many/varied as you can)
 - 在競爭環境下找自己的利基點 (Compete with established ones if you can) 
 
 1. Frequency Diversity (e.g., the dissemination of words across individuals/generations/topics/boards/...)
@@ -698,7 +699,7 @@ Distributional (Semantic) Model based on the Deep LEXICON
 ---
 ## Magic Formular identified 
 
-Measure of Inclusion:
+Measure of Inclusion: (Hseih et al. forthcoming)
 $$latex
 \mathcal{I} = \ln( \alpha \mathcal{F} + \beta \frac{S}{P}) 
 $$
@@ -706,7 +707,7 @@ $$
 - F: frequency diversity within short-term time span (revised constant U)
   - number of sources (ptt and newspapers)
   - number of genres (different boards)
-- S: syntagtic lexical network via *collocation variations*
+- S: syntagtic lexical network via *collocation variations* (type/token)
 - P: paradigmatic lexical network via *distributional proximity*
 
 <!--

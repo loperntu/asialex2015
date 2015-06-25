@@ -71,7 +71,7 @@
   
   
   <hgroup>
-    <h2>Motivation: Age Guessing (X)</h2>
+    <h2>Motivation (X): Age Guessing</h2>
   </hgroup>
   
   <article data-timings="">
@@ -95,7 +95,7 @@ I'm particularly interested in applications of natural language processing in le
   
   
   <hgroup>
-    <h2>Motivation: Lexical Age Guessing (X)</h2>
+    <h2>Motivation (O): Lexical Age Guessing</h2>
   </hgroup>
   
   <article data-timings="">
@@ -491,7 +491,7 @@ layout: slide
     <ol>
 <li>Introduction</li>
 <li><strong><code>Previous works on Neologisms</code></strong></li>
-<li>Measuring Lexical Aging as an Example</li>
+<li>Our approach</li>
 <li>Conclusion</li>
 </ol>
 
@@ -881,7 +881,7 @@ layout: slide
   
   <article data-timings="">
     <ul>
-<li>Tsunami of linguistic data; influx of neologisms</li>
+<li>Tsunami of linguistic data; massive influx of neologisms is unavoidable</li>
 </ul>
 
 <!-- However, because of a lack of precise knowledge of the value embedded within this huge crush of data, many businesses have been stuck in the “data for data’s sake” trap .... Deep data? another industry buzzword?--> 
@@ -1147,7 +1147,7 @@ layout: slide
     <p>(Liu, Hsieh, and Prévot, 2013)</p>
 
 <ul>
-<li>PTT-based (2015-2012, 八卦版+就可版+笨版), preproceesed.</li>
+<li>PTT-based (2015-2012, three hot discussion boards), preproceesed.</li>
 <li>PTT Corpus (<code>http://lopen.linguistics.ntu.edu.tw/PTT</code>)</li>
 </ul>
 
@@ -1183,7 +1183,7 @@ layout: slide
   
   <article data-timings="">
     <ul>
-<li>These large, short-term fluctuations add an important new dimension to the study of the long-term dynamics of language, as any novel expression must survive in the short term to survive in the long term. (Altmann, 2011). But short-term frequency data do not reveal the difference between diffusion and stablization.</li>
+<li>These large, short-term fluctuations add an important new dimension to the study of the long-term dynamics of language, as any novel expression must survive in the short term to survive in the long term. (Altmann, 2011). <code>But short-term frequency data do not reveal the difference between diffusion and stablization</code>.</li>
 </ul>
 
 <p><img src="assets/img/ptt.freq.png" alt="Drawing" style="width: 900px;"/></p>
@@ -1219,14 +1219,15 @@ e.g., 挺 may come and go follow the start and end of election. 花博。本研�
   
   
   <hgroup>
-    <h2>DeepLEX is in</h2>
+    <h2>Modeling the Life Cycle of Words: Our Second Approach</h2>
   </hgroup>
   
   <article data-timings="">
-    <!--詞彙不像人，可以離群索居，成就自己的意義。詞彙的意義是透過系統間的關係相對定義出來的。
-因此我們認為應該關注詞彙的社會行為。-->
-
-<p>BTU Question: 那些變項|組合最大地決定了<code>詞彙年齡</code> (存活能力) ? </p>
+    <ol>
+<li><p>Use <code>google book ngram</code> as training data (to infer the laws), and <code>ptt</code> as test data.</p></li>
+<li><p>In addition to previous efforts that exploit the syntagmatic patterns of a candidate neologism (e.g., via <code>collocate profile</code>), we also propose to incorporate paradigmatic patterns (via creating <code>social network</code> of the candidate).</p></li>
+<li><p>Power the predition model with weights from human jugements (via questionnaire web application or APP games)</p></li>
+</ol>
 
     
   </article>
@@ -1237,17 +1238,14 @@ e.g., 挺 may come and go follow the start and end of election. 花博。本研�
   
   
   <hgroup>
-    <h2>Modeling Lexical Aging: Our Second Comings</h2>
+    <h2>DeepLEX is in</h2>
   </hgroup>
   
   <article data-timings="">
-    <p>不是二元的分類問題，應有新的訓練與評測方法</p>
+    <!--詞彙不像人，可以離群索居，成就自己的意義。詞彙的意義是透過系統間的關係相對定義出來的。
+因此我們認為應該關注詞彙的社會行為。-->
 
-<ol>
-<li><p>Use <code>google book ngram</code> as training data (to infer the laws), and <code>ptt</code> as test data.</p></li>
-<li><p>In addition to previous efforts that exploit the syntagmatic patterns of a candidate neologism (e.g., via <code>collocate profile</code>), we also propose to incorporate paradigmatic patterns (via creating <code>social network</code> of the candidate).</p></li>
-<li><p>Power the predition model with weights from human jugements (via questionnaire web application or APP games)</p></li>
-</ol>
+<p>BTU Question: 那些變項|組合最大地決定了<code>詞彙年齡</code> (存活能力) ? </p>
 
     
   </article>
@@ -1403,7 +1401,7 @@ a real-world event ot popular preoccupation.
     <h3>SNA&#39;s parlance</h3>
 
 <ul>
-<li>交各式各樣的朋友 (Make friends, as many/varies as you can)</li>
+<li>交各式各樣的朋友 (Make friends, as many/varied as you can)</li>
 <li>在競爭環境下找自己的利基點 (Compete with established ones if you can) </li>
 </ul>
 
@@ -1429,7 +1427,7 @@ a real-world event ot popular preoccupation.
   </hgroup>
   
   <article data-timings="">
-    <p>Measure of Inclusion:
+    <p>Measure of Inclusion: (Hseih et al. forthcoming)
 \[
 \mathcal{I} = \ln( \alpha \mathcal{F} + \beta \frac{S}{P}) 
 \]</p>
@@ -1441,7 +1439,7 @@ a real-world event ot popular preoccupation.
 <li>number of sources (ptt and newspapers)</li>
 <li>number of genres (different boards)</li>
 </ul></li>
-<li>S: syntagtic lexical network via <em>collocation variations</em></li>
+<li>S: syntagtic lexical network via <em>collocation variations</em> (type/token)</li>
 <li>P: paradigmatic lexical network via <em>distributional proximity</em></li>
 </ul>
 
@@ -1648,13 +1646,13 @@ success</em>. Houghton Mifflin Harcourt, 2004.</p>
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Motivation: Age Guessing (X)'>
+        data-slide=1 title='Motivation (X): Age Guessing'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Motivation: Lexical Age Guessing (X)'>
+        data-slide=2 title='Motivation (O): Lexical Age Guessing'>
          2
       </a>
     </li>
@@ -1900,13 +1898,13 @@ success</em>. Houghton Mifflin Harcourt, 2004.</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=43 title='DeepLEX is in'>
+        data-slide=43 title='Modeling the Life Cycle of Words: Our Second Approach'>
          43
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=44 title='Modeling Lexical Aging: Our Second Comings'>
+        data-slide=44 title='DeepLEX is in'>
          44
       </a>
     </li>
