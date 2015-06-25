@@ -303,9 +303,9 @@ Lexical Blends
 > How do neologisms leave the memory trace in our mental lexicon? (frequencies of exposure, types of neologisms, ...)
 
 
-- (De Vaan, Schreuder, and Baayen, 2007) For the neologisms, a stepwise mixed-effect regression analysis resulted in a model with significant main effects of Length, and Number of Synsets. As for the existing words, ratings increased with increasing Length ($\hat{\beta}$ = 0.238, t(877) = 2.805, p = .0051) and decreased for increasing Numbers of Synsets ($\hat{\beta}$ = −0.560, t(877) = −3.359, p = .0008). 新詞 詞長度越長，越熟悉。 synset 數量越多（越多義）越不熟悉。
- 
-> 不過我們關心的是 collective mental lexicon (constrained by real world / socail communication)
+- (De Vaan, Schreuder, and Baayen, 2007) For the neologisms, a stepwise mixed-effect regression analysis resulted in a model with significant main effects of Length, and Number of Synsets. As for the existing words, ratings increased with increasing Length ($\hat{\beta}$ = 0.238, t(877) = 2.805, p = .0051) and decreased for increasing Numbers of Synsets ($\hat{\beta}$ = −0.560, t(877) = −3.359, p = .0008). 
+
+> What we are concern about is the collective mental lexicon (constrained by real world / socail communication)
 
 
 ---
@@ -524,7 +524,7 @@ Use **collocational information** to (semi-) automatically determine the candida
 | `frequency.childes` | frequency of CHILDES Corpus  |
 | `frequency.ptt`     | frequency of PTT                    |
 
-**AND MANY OTHERS!** modules in progress: 情緒 發展歷程 語義 使用頻率 年紀 關係 性別 教學難易 部首概念 意類 知識本體 社會心理人格 . . . . . . . . . . . . . .  
+**AND MANY OTHERS!** modules in progress: Affect, Aquisition, Semantics, Familiarity, Orthography, Ontology, Socio-Psychology, Neurolinguistics . . . . . . . . . . . .  
 
 <!--
 - phonological module
@@ -630,7 +630,7 @@ __________
 ## Residual Analysis 
 
 
-
+<img src="assets/img/residual.png" alt="Drawing" style="width: 900px;"/>
 
 
 ---
