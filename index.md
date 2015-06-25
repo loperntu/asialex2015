@@ -27,11 +27,7 @@ github      : {user: loperntu, repo: asialex2015}
 
 <!--
 OPENING: 介紹自己，研究興趣 
-
 I'm particularly interested in applications of natural language processing in lexicography for building better dictionaries and keeping dictionaries up to date.
-
-附圖 two-column ：MS 的 age prediction (on me + 「謝舒凱」圖檔) 或黃居仁老師跟我的合照
-
 -->
 
 ---
@@ -46,7 +42,7 @@ I'm particularly interested in applications of natural language processing in le
 
 --- bg:#FFFAF0
 ## Outline
-<!-- comment -->
+
 1. Introduction
 2. Previous works on Neologisms
 3. Measuring Lexical Age
@@ -119,7 +115,7 @@ I'm particularly interested in applications of natural language processing in le
 
 <img src="assets/img/moe.jpg" alt="Drawing" style="width: 300px;"/>
 
-#### An example of MOE Chinese Dictionary (教育部國語辭典為例) APP: full of 'desuetude' 
+#### An example of MOE Chinese Dictionary APP: full of 'desuetude' 
 #### 11 new words out of 3 paragraphs randomly picked.
 
 <img src="assets/img/moe-test.png" alt="Drawing" style="width: 700px;"/>
@@ -281,7 +277,7 @@ Note: various morphological mechnisms for lexical neology (Cook, 2010):
 
 ## Examples of Popular Culture Neologisms
 
-[Staycation] 屬於那一類新詞? morphological strategy?
+[Staycation] : morphological strategy?
 
 1. _lexical neology_
 2. semantic neology
